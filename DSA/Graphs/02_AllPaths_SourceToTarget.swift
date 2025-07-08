@@ -17,28 +17,31 @@
 
 import Foundation
 
-func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {
+extension Solution {
 
-    var result = [[Int]]()
-    var path = [Int]()
-    let target = graph.count - 1 // We need to find paths to the node n - 1
+    func allPathsSourceTarget(_ graph: [[Int]]) -> [[Int]] {
 
-    func dfs(node: Int) {
-        path.append(node)
+        var result = [[Int]]()
+        var path = [Int]()
+        let target = graph.count - 1 // We need to find paths to the node n - 1
 
-        if node == target {
-            result.append(path)
+        func dfs(node: Int) {
+            path.append(node)
+
+            if node == target {
+                result.append(path)
+            }
+
+            let neighbours = graph[node]
+            for neighbour in neighbours {
+                dfs(node: neighbour)
+            }
+
+            path.removeLast() // backtrackking
         }
 
-        let neighbours = graph[node]
-        for neighbour in neighbours {
-            dfs(node: neighbour)
-        }
+        dfs(node: 0)
 
-        path.removeLast() // backtrackking
+        return result
     }
-
-    dfs(node: 0)
-
-    return result
 }

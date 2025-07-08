@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290442462E1D675000AA0BF4 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290442452E1D674F00AA0BF4 /* Heap.swift */; };
 		290B0A332D3A9B99003F8A1A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B0A322D3A9B99003F8A1A /* main.swift */; };
 		290B0A3B2D3A9BD1003F8A1A /* 01_MoveZeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B0A3A2D3A9BD1003F8A1A /* 01_MoveZeroes.swift */; };
 		290B0A402D3AA15B003F8A1A /* 02_MajorityElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B0A3F2D3AA15B003F8A1A /* 02_MajorityElement.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		290442452E1D674F00AA0BF4 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
 		290B0A2F2D3A9B99003F8A1A /* DSA */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DSA; sourceTree = BUILT_PRODUCTS_DIR; };
 		290B0A322D3A9B99003F8A1A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		290B0A3A2D3A9BD1003F8A1A /* 01_MoveZeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 01_MoveZeroes.swift; sourceTree = "<group>"; };
@@ -58,6 +60,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29076AB02E06B8060092954C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				299EF62E2DE8A54600C42728 /* TreeNode.swift */,
+				290442452E1D674F00AA0BF4 /* Heap.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		290B0A262D3A9B99003F8A1A = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				290B0A322D3A9B99003F8A1A /* main.swift */,
+				29076AB02E06B8060092954C /* Utilities */,
 				290B0A392D3A9BBE003F8A1A /* Arrays */,
 				299EF62B2DE8A42E00C42728 /* Graphs */,
 			);
@@ -100,7 +112,6 @@
 		299EF62B2DE8A42E00C42728 /* Graphs */ = {
 			isa = PBXGroup;
 			children = (
-				299EF62E2DE8A54600C42728 /* TreeNode.swift */,
 				299EF62C2DE8A46400C42728 /* 01_PathSum2.swift */,
 				2941331B2DFD394F00588AEA /* 02_AllPaths_SourceToTarget.swift */,
 				2941331F2DFD4C7300588AEA /* 03_SurroundedRegions.swift */,
@@ -172,6 +183,7 @@
 				294F440F2D43D1FE00A898A3 /* 06_ProductOfArrayExceptSelf.swift in Sources */,
 				2941331C2DFD394F00588AEA /* 02_AllPaths_SourceToTarget.swift in Sources */,
 				290B0A332D3A9B99003F8A1A /* main.swift in Sources */,
+				290442462E1D675000AA0BF4 /* Heap.swift in Sources */,
 				29C56C902D3BFCF500EECD27 /* 03_RemoveDuplicates.swift in Sources */,
 				294133202DFD4C7300588AEA /* 03_SurroundedRegions.swift in Sources */,
 				296B0CEE2D3FEC9800867EA2 /* 05_RotateArray.swift in Sources */,
